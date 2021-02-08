@@ -1,0 +1,14 @@
+{
+  "fit_args": {
+    "epochs": 10,
+    "batch_size": 64
+  },
+  "random_seed": 120,
+  "data": {
+    "images": "nimages_training_1800000_202011251111.npy",
+    "labels": "labels_training_1800000_202011251111.npy"
+  },
+  "kfold_args": {
+    "shuffle": false
+  }
+}

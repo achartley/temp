@@ -1,0 +1,28 @@
+#!/bin/bash --login
+########## SBATCH Lines for Resource Request ##########
+
+# limit of wall clock time - how long the job will run (same as -t)
+#SBATCH --time=24:00:00
+
+# number of different nodes - could be an exact number or a range of nodes 
+#SBATCH --nodes=1
+
+# number of CPUs (or cores) per task (same as -c)
+#SBATCH --cpus-per-task=1
+
+# use standard intel16 "laconia" nodes.
+#SBATCH --constraint=lac            
+
+# memory required per allocated  Node  - amount of memory (in bytes)
+#SBATCH --mem=128G                  
+
+#Send email notification to your MSU email when the job begins, ends, or is aborted by the scheduler.
+#SBATCH --mail-user=hartle73@msu.edu   
+#SBATCH --mail-type=FAIL,END
+
+# you can give your job a name for easier identification (same as -J)
+#SBATCH --job-name dense_n20M_e50
+ 
+########## Command Lines to Run ##########
+
+srun ~/anaconda3/bin/python3 full_training_dense.py results_experiment_config_n20M_e50.json

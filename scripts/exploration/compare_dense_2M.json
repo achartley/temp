@@ -1,0 +1,10 @@
+{
+    "NAME": "CLEAN DENSE 2M",
+    "ML_METHOD": "DENSE",
+    "DATA_PATH": "../../data/simulated/",
+    "IMAGE_FILE": "images_test_200000_202011251111.npy",
+    "LABEL_FILE": "labels_test_200000_202011251111.npy",
+    "MODEL_PATH": "../../models/",
+    "CLASSIFIER": "5eae916b1ae6.h5"
+}
+

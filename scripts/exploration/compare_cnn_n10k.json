@@ -1,0 +1,9 @@
+{
+    "NAME": "NOISY CNN 20M",
+    "ML_METHOD": "CNN",
+    "DATA_PATH": "../../data/simulated/",
+    "IMAGE_FILE": "nimages_test_1000_202011192348.npy",
+    "LABEL_FILE": "labels_test_1000_202011192348.npy",
+    "MODEL_PATH": "../../models/",
+    "CLASSIFIER": "05bc4b52b3ec.h5"
+}

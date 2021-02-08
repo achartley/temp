@@ -1,0 +1,4 @@
+{
+    "distfile": "ratiodist.txt",
+    "imagefile": ["image250.npy","image500.npy","image9000.npy"]
+}

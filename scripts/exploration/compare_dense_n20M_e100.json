@@ -1,0 +1,9 @@
+{
+    "NAME": "NOISY DENSE 20M E100",
+    "ML_METHOD": "DENSE",
+    "DATA_PATH": "../../data/simulated/",
+    "IMAGE_FILE": "images_test_2000000_202012080020.npy",
+    "LABEL_FILE": "labels_test_2000000_202012080020.npy",
+    "MODEL_PATH": "../../models/",
+    "CLASSIFIER": "c928781db8e2.h5"
+}

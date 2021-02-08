@@ -1,0 +1,9 @@
+{
+    "DATA_PATH": "../../data/real/datafile.txt",
+    "MODEL_PATH": "../../data/output/models/",
+    "CLASSIFIER": "classifier_name.txt",
+    "SINGLE_ENERGY_MODEL": "single_energy_model_name.txt",
+    "SINGLE_POSITION_MODEL": "single_position_model_name.txt",
+    "DOUBLE_ENERGY_MODEL": "double_energy_model_name.txt",
+    "DOUBLE_POSITION_MODEL": "double_position_model_name.txt"
+}

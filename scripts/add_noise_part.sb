@@ -1,0 +1,30 @@
+#!/bin/bash --login
+########## SBATCH Lines for Resource Request ##########
+
+# limit of wall clock time - how long the job will run (same as -t)
+#SBATCH --time=12:40:00
+
+# number of different nodes - could be an exact number or a range of nodes 
+#SBATCH --nodes=1
+
+# number of CPUs (or cores) per task (same as -c)
+#SBATCH --cpus-per-task=8
+
+# use standard intel16 "laconia" nodes.
+#SBATCH --constraint=lac            
+
+# memory required per allocated  Node  - amount of memory (in bytes)
+#SBATCH --mem=128G                  
+
+#Send email notification to your MSU email when the job begins, ends, or is aborted by the scheduler.
+#SBATCH --mail-user=hartle73@msu.edu   
+#SBATCH --mail-type=FAIL,END
+
+# you can give your job a name for easier identification (same as -J)
+#SBATCH --job-name add_noise_part
+ 
+########## Command Lines to Run ##########
+
+export OMP_PROC_BIND=true
+
+srun ~/anaconda3/bin/python3 add_noise.py add_noise_config_part.json > add_noise_part.out

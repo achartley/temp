@@ -1,0 +1,9 @@
+{
+    "NAME": "CLEAN CNN 2M",
+    "ML_METHOD": "CNN",
+    "DATA_PATH": "../../data/simulated/",
+    "IMAGE_FILE": "images_test_200000_202011251111.npy",
+    "LABEL_FILE": "labels_test_200000_202011251111.npy",
+    "MODEL_PATH": "../../models/",
+    "CLASSIFIER": "254c79e8a081.h5"
+}
